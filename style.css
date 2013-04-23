@@ -1,8 +1,9 @@
 body {
 	margin: 0;
-    font-family: open sans, helvetica, san-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial ,sans-serif;
 }
-.wrap {
+/* If you're using html5 you might as well use section instead of .wrap */
+section {
 	max-width: 850px;
 	margin: 0 auto;
 }
@@ -14,25 +15,25 @@ header h2 {
 	font-weight: normal;
 	color: white;
 }
-header ul {
+/* html5 nav element with links inside, better to control and much simpler */
+header nav {
 	float: right;
 	margin-top: -46px;
 }
-header li {
-	display: inline;
+header a {
 	padding: 8px;
-}
-header li a {
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
 }
-#welcome {
+/* classes are way more versatile, suggest you make this another section element */
+.welcome {
 	text-align: center;
 	padding-top: 45px;
 }
-#welcome p {
+/* That first line about you should be a h1, most important piece of info on the page. Good for SEO */
+.welcome h1 {
 	font-size: 18px;
 	color: gray;
 }
